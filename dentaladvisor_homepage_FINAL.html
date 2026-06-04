@@ -9,20 +9,20 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --navy: #203552;
-    --navy-mid: #203552;
-    --blue: #E4762E;
-    --blue-light: #E87535;
-    --gold: #E4762E;
-    --gold-light: #F8C569;
-    --cream: #F7F4EF;
-    --cream-dark: #EDE9E1;
-    --white: #FFFFFF;
-    --text: #1A1A1A;
-    --text-mid: #4A4A4A;
-    --text-light: #787878;
-    --border: #D8D2C8;
-  }
+  --navy: #0e2346;        /* main dark blue */
+  --navy-mid: #1a3a63;    /* slightly lighter blue — gives gradients depth */
+  --blue: #ea8534;        /* orange accent (drives CTA links) */
+  --blue-light: #f09a52;  /* lighter orange for hover states */
+  --gold: #ea8534;        /* orange */
+  --gold-light: #fdb840;  /* yellow/gold accent */
+  --cream: #F7F4EF;
+  --cream-dark: #EDE9E1;
+  --white: #FFFFFF;
+  --text: #1A1A1A;
+  --text-mid: #4A4A4A;
+  --text-light: #787878;
+  --border: #D8D2C8;
+}
 
   html { scroll-behavior: smooth; }
 
@@ -277,7 +277,7 @@
   /* ─── DR. BUNEK PANEL ─── */
   .hero-doctor {
     position: relative;
-    background: linear-gradient(135deg, #203552 0%, #203552 100%);
+    background: linear-gradient(135deg, #0e2346 0%, #0e2346 100%);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -296,7 +296,7 @@
   .hero-doctor-placeholder {
     position: absolute;
     inset: 0;
-    background: linear-gradient(160deg, #203552 0%, #203552 100%);
+    background: linear-gradient(160deg, #0e2346 0%, #0e2346 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -508,10 +508,10 @@
     text-transform: uppercase;
     color: rgba(255,255,255,0.5);
   }
-  .card-img-1 { background: linear-gradient(135deg, #203552, #E4762E); }
-  .card-img-2 { background: linear-gradient(135deg, #203552, #203552); }
-  .card-img-3 { background: linear-gradient(135deg, #E4762E, #203552); }
-  .card-img-4 { background: linear-gradient(135deg, #E4762E, #E4762E); }
+  .card-img-1 { background: linear-gradient(135deg, #0e2346, #ea8534); }
+  .card-img-2 { background: linear-gradient(135deg, #0e2346, #0e2346); }
+  .card-img-3 { background: linear-gradient(135deg, #ea8534, #0e2346); }
+  .card-img-4 { background: linear-gradient(135deg, #ea8534, #ea8534); }
   .card-tag {
     position: absolute;
     top: 14px;
@@ -623,7 +623,7 @@
     line-height: 1.4;
   }
   .featured-eval-img {
-    background: linear-gradient(135deg, #203552, #E4762E);
+    background: linear-gradient(135deg, #0e2346, #ea8534);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -741,7 +741,7 @@
   }
   .medal-gold { background: linear-gradient(135deg, var(--gold), var(--gold-light)); }
   .medal-silver { background: linear-gradient(135deg, #8A9BB0, #B0BEC5); }
-  .medal-bronze { background: linear-gradient(135deg, #C05020, #E4762E); }
+  .medal-bronze { background: linear-gradient(135deg, #C05020, #ea8534); }
   .medal-blue { background: linear-gradient(135deg, var(--navy-mid), var(--blue)); }
   .award-name {
     font-family: 'Playfair Display', serif;
@@ -769,7 +769,7 @@
     overflow: hidden;
   }
   .founder-visual {
-    background: linear-gradient(135deg, #203552, #203552);
+    background: linear-gradient(135deg, #0e2346, #0e2346);
     position: relative;
     min-height: 500px;
     display: flex;
@@ -1177,7 +1177,7 @@
 
   /* ─── ANNOUNCEMENT BAR ─── */
   .announcement-bar {
-    background: linear-gradient(90deg, #203552 0%, #203552 50%, #203552 100%);
+    background: linear-gradient(90deg, #0e2346 0%, #0e2346 50%, #0e2346 100%);
     position: relative;
     overflow: hidden;
     transition: filter 0.2s;
@@ -1241,10 +1241,10 @@
     overflow: visible;
   }
   .speaker-avatar:first-child { margin-left: 0; }
-  .speaker-avatar:nth-child(1) { background: linear-gradient(135deg, #203552, #E4762E); z-index: 4; }
-  .speaker-avatar:nth-child(2) { background: linear-gradient(135deg, #203552, #203552); z-index: 3; }
-  .speaker-avatar:nth-child(3) { background: linear-gradient(135deg, #E4762E, #E87535); z-index: 2; }
-  .speaker-avatar:nth-child(4) { background: linear-gradient(135deg, #203552, #203552); z-index: 1; }
+  .speaker-avatar:nth-child(1) { background: linear-gradient(135deg, #0e2346, #ea8534); z-index: 4; }
+  .speaker-avatar:nth-child(2) { background: linear-gradient(135deg, #0e2346, #0e2346); z-index: 3; }
+  .speaker-avatar:nth-child(3) { background: linear-gradient(135deg, #ea8534, #f09a52); z-index: 2; }
+  .speaker-avatar:nth-child(4) { background: linear-gradient(135deg, #0e2346, #0e2346); z-index: 1; }
   .speaker-avatar:hover { transform: translateY(-4px) scale(1.1); z-index: 10 !important; }
   .speaker-avatar-inner {
     width: 100%;
@@ -1655,10 +1655,10 @@
 .sad-visual-text { color: rgba(255,255,255,0.35); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; text-align: center; }
 .sad-content { padding: 18px 20px; display: flex; flex-direction: column; justify-content: space-between; }
 .sad-sponsor { font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #a09080; margin-bottom: 5px; }
-.sad-headline { font-size: 15px; font-weight: 700; color: #203552; line-height: 1.3; margin-bottom: 7px; }
+.sad-headline { font-size: 15px; font-weight: 700; color: #0e2346; line-height: 1.3; margin-bottom: 7px; }
 .sad-sub { font-size: 12.5px; color: #4A4A4A; line-height: 1.55; margin-bottom: 14px; flex: 1; }
 .sad-award { display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg, #B8963E, #D4AF6A); color: #fff; font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: 10px; margin-bottom: 10px; width: fit-content; }
-.sad-cta { display: inline-block; padding: 9px 18px; background: #203552; color: #fff; font-size: 11.5px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; text-decoration: none; border-radius: 2px; }
+.sad-cta { display: inline-block; padding: 9px 18px; background: #0e2346; color: #fff; font-size: 11.5px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; text-decoration: none; border-radius: 2px; }
 .sad-cta:hover { background: #2e4a6e; }
 @media (max-width: 768px) {
   .ad-strip { padding: 0 16px 28px; }
@@ -1837,7 +1837,7 @@
       <option>Awards</option>
       <option>Education</option>
     </select>
-    <button style="padding:0 28px;background:#E4762E;border:none;color:#fff;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;white-space:nowrap;flex-shrink:0;transition:.2s;">Search →</button>
+    <button style="padding:0 28px;background:#ea8534;border:none;color:#fff;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;white-space:nowrap;flex-shrink:0;transition:.2s;">Search →</button>
   </div>
 </div>
 
