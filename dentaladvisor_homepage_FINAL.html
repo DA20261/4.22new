@@ -1718,7 +1718,25 @@
 .logo-track{display:flex;gap:0;animation:scroll-logos 30s linear infinite;width:max-content;}
 .logo-track:hover{animation-play-state:paused;}
 .logo-item{display:flex;align-items:center;justify-content:center;padding:0 36px;height:56px;flex-shrink:0;}
-.logo-item span{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--text-light);letter-spacing:.04em;white-space:nowrap;transition:.2s;}
+.logo-item img {
+  height: 32px;          /* uniform height lines them all up */
+  width: auto;           /* keeps each logo's proportions */
+  object-fit: contain;
+  filter: grayscale(1);  /* muted so the row reads as quiet credibility */
+  opacity: 0.55;
+}
+.logo-item img {
+  height: 30px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(1);
+  opacity: 0.55;
+  transition: 0.2s;
+}
+.logo-item:hover img {
+  filter: grayscale(0);
+  opacity: 1;
+}
 .logo-item:hover span{color:var(--navy);}
 @keyframes scroll-logos{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
 
@@ -1921,8 +1939,8 @@
   <div class="logo-carousel-label">Companies Whose Products We've Evaluated</div>
   <div class="logo-track-wrap">
     <div class="logo-track">
-      <div class="logo-item"><span>Solventum</span></div><div class="logo-item"><span>Kuraray Noritake</span></div><div class="logo-item"><span>Kerr Dental</span></div><div class="logo-item"><span>Dentsply Sirona</span></div><div class="logo-item"><span>Colgate-Palmolive</span></div><div class="logo-item"><span>GC America</span></div><div class="logo-item"><span>Ultradent Products</span></div><div class="logo-item"><span>Ivoclar</span></div><div class="logo-item"><span>Bisco Dental</span></div><div class="logo-item"><span>VOCO</span></div><div class="logo-item"><span>Shofu</span></div><div class="logo-item"><span>Coltene</span></div><div class="logo-item"><span>Septodont</span></div><div class="logo-item"><span>Kettenbach</span></div><div class="logo-item"><span>B.J.M. Labs</span></div><div class="logo-item"><span>Spident</span></div><div class="logo-item"><span>MEDICLUS</span></div>
-      <div class="logo-item"><span>Solventum</span></div><div class="logo-item"><span>Kuraray Noritake</span></div><div class="logo-item"><span>Kerr Dental</span></div><div class="logo-item"><span>Dentsply Sirona</span></div><div class="logo-item"><span>Colgate-Palmolive</span></div><div class="logo-item"><span>GC America</span></div><div class="logo-item"><span>Ultradent Products</span></div><div class="logo-item"><span>Ivoclar</span></div><div class="logo-item"><span>Bisco Dental</span></div><div class="logo-item"><span>VOCO</span></div><div class="logo-item"><span>Shofu</span></div><div class="logo-item"><span>Coltene</span></div><div class="logo-item"><span>Septodont</span></div><div class="logo-item"><span>Kettenbach</span></div><div class="logo-item"><span>B.J.M. Labs</span></div><div class="logo-item"><span>Spident</span></div><div class="logo-item"><span>MEDICLUS</span></div>
+      <div class="logo-item"><img src="images/logos/Solventum.png" alt="Solventum"></div><div class="logo-item"><img src="images/logos/Kuraray.png" alt="Kuraray Noritake"></div><div class="logo-item"><img src="images/logos/Kerr.png" alt="Kerr Dental"></div><div class="logo-item"><img src="images/logos/Dentsply.png" alt="Dentsply Sirona"></div><div class="logo-item"><img src="images/logos/colgate.png" alt="Colgate-Palmolive"></div><div class="logo-item"><img src="images/logos/GC America.png" alt="GC America"></div><div class="logo-item"><img src="images/logos/Ultradent.png" alt="Ultradent Products"></div><div class="logo-item"><img src="images/logos/Ivoclar.png" alt="Ivoclar"></div><div class="logo-item"><img src="images/logos/BISCO.png" alt="Bisco Dental"></div><div class="logo-item"><img src="images/logos/voco (2).png" alt="VOCO"></div><div class="logo-item"><img src="images/logos/shofu.png" alt="Shofu"></div><div class="logo-item"><img src="images/logos/coltene.png" alt="Coltene"></div><div class="logo-item"><img src="images/logos/septodont.png" alt="Septodont"></div><div class="logo-item"><img src="images/logos/kettenbach.png" alt="Kettenbach"></div><div class="logo-item"><img src="images/logos/BJM Labs.png" alt="B.J.M. Labs"></div><div class="logo-item"><img src="images/logos/spident.png" alt="Spident"></div><div class="logo-item"><img src="images/logos/MDClus.png" alt="MEDICLUS"></div>
+      <div class="logo-item"><img src="images/logos/Solventum.png" alt="Solventum"></div><div class="logo-item"><img src="images/logos/Kuraray.png" alt="Kuraray Noritake"></div><div class="logo-item"><img src="images/logos/Kerr.png" alt="Kerr Dental"></div><div class="logo-item"><img src="images/logos/Dentsply.png" alt="Dentsply Sirona"></div><div class="logo-item"><img src="images/logos/colgate.png" alt="Colgate-Palmolive"></div><div class="logo-item"><img src="images/logos/GC America.png" alt="GC America"></div><div class="logo-item"><img src="images/logos/Ultradent.png" alt="Ultradent Products"></div><div class="logo-item"><img src="images/logos/Ivoclar.png" alt="Ivoclar"></div><div class="logo-item"><img src="images/logos/BISCO.png" alt="Bisco Dental"></div><div class="logo-item"><img src="images/logos/voco (2).png" alt="VOCO"></div><div class="logo-item"><img src="images/logos/shofu.png" alt="Shofu"></div><div class="logo-item"><img src="images/logos/coltene.png" alt="Coltene"></div><div class="logo-item"><img src="images/logos/septodont.png" alt="Septodont"></div><div class="logo-item"><img src="images/logos/kettenbach.png" alt="Kettenbach"></div><div class="logo-item"><img src="images/logos/BJM Labs.png" alt="B.J.M. Labs"></div><div class="logo-item"><img src="images/logos/spident.png" alt="Spident"></div><div class="logo-item"><img src="images/logos/MDClus.png" alt="MEDICLUS"></div>
     </div>
   </div>
 </div>
