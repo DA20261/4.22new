@@ -1634,11 +1634,19 @@
   /* Content hub */
   .content-hub { grid-template-columns: 1fr 1fr !important; }
   /* Related grid */
+  .content-grid { grid-template-columns: 1fr 1fr !important; gap: 16px !important; }
+  .trust-bar {
+    flex-wrap: wrap;
+    gap: 14px 24px;
+    padding: 18px 16px;
+}
+.trust-divider { display: none; }
   .rel-footer { flex-wrap: wrap; }
 }
 @media (max-width: 480px) {
   .eval-stats { grid-template-columns: 1fr 1fr; }
   .content-hub { grid-template-columns: 1fr !important; }
+  .content-grid { grid-template-columns: 1fr !important; }
   .footer-grid { grid-template-columns: 1fr !important; }
   .test-grid { grid-template-columns: 1fr !important; }
   .hero-stat-grid { grid-template-columns: 1fr; }
@@ -1723,12 +1731,6 @@
 .logo-track{display:flex;gap:0;animation:scroll-logos 30s linear infinite;width:max-content;}
 .logo-track:hover{animation-play-state:paused;}
 .logo-item{display:flex;align-items:center;justify-content:center;padding:0 36px;height:56px;flex-shrink:0;}
-.logo-item img {
-  height: 32px;          /* uniform height lines them all up */
-  width: auto;           /* keeps each logo's proportions */
-  object-fit: contain;
-  filter: grayscale(1);  /* muted so the row reads as quiet credibility */
-  opacity: 0.55;
 }
 .logo-item img {
   height: 30px;
@@ -1742,7 +1744,6 @@
   filter: grayscale(0);
   opacity: 1;
 }
-.logo-item:hover span{color:var(--navy);}
 @keyframes scroll-logos{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
 
 </style>
