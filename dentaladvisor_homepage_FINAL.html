@@ -84,23 +84,17 @@
   .nav-logo {
     padding: 18px 0;
   }
+ .nav-logo {
+    padding: 18px 0;
+  }
+  .nav-logo img {
+    height: 44px;
+    width: auto;
+    display: block;
+  }
   .nav-logo span {
     font-family: 'Playfair Display', serif;
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--navy);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
-  .nav-logo .sub {
-    display: block;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 9px;
-    color: var(--gold);
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    margin-top: 2px;
-  }
+    ...
   .nav-links {
     display: flex;
     gap: 0;
@@ -1814,10 +1808,9 @@
 
 <!-- ─── NAV ─── -->
 <nav>
-  <div class="nav-logo">
-    <span>Dental Advisor</span>
-    <span class="sub">Independent Research & Evaluations</span>
-  </div>
+  <a href="/" class="nav-logo">
+    <img src="images/Logo_Variation1_Color_1000x.png" alt="Dental Advisor — Research clinicians trust.">
+  </a>
   <ul class="nav-links">
     <li><a href="#" >Publication</a></li>
     <li>
